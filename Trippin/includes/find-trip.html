@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Trippin</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="../css/style.css">
+
+     
+
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+
+         <!-- java script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+      
+
+</head>
+
+<body>
+
+
+    <!-- navbar will import to  here -->
+
+    <nav class="nav col-md-12" style="background: #41214b"></nav>
+
+    <!-- navbar ends here -->
+
+    <!-- trips Recommendtion will start here-->
+    <main>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/thailand.jpg" >
+            <div class="card-body">
+              <p class="card-text">the thai magic- its a 14 days trip to smell, taste and see. common!  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" class="btn btn-sm btn-info" href="https://www.gratefulgypsies.com/one-month-in-thailand/"  target="_blank" >View</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/uk.jpg" >
+
+            <div class="card-body">
+              <p class="card-text">british magic- its a short weekend trip to Her Majesty city-fun! </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-info" href="https://www.visitlondon.com/things-to-do/sightseeing/one-day-itineraries/cheap-weekend-in-london" target="_blank">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/usa.jpg"> 
+
+            <div class="card-body">
+              <p class="card-text">Coast to coast - A 25 days through the legendary road "66"</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-info" href="https://travelat60.com/holidays/usa-coast-to-coast-25-days-los-angeles-to-new-york-city" target="_blank">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/egypt.jpg" >
+
+            <div class="card-body">
+              <p class="card-text">Pharaoh's trip is a crazy encounter with Arab culture and the Egyptian cuisine</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-info" href="https://www.intrepidtravel.com/adventures/egypt-one-week-guide/" target="_blank">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/india.jpg" >
+
+            <div class="card-body">
+              <p class="card-text">My beloved India- this is a trip that allows a journey into yourself.desert and snow </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-info" href="https://leaveyourdailyhell.com/one-month-in-india/" target="_blank">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../media/paris.jpg" >
+
+            <div class="card-body">
+              <p class="card-text">A trip for loved ones allows you to experience the romance that the city in the world</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-info" href="https://www.lonelyplanet.com/articles/how-to-spend-a-perfect-weekend-in-paris" target="_blank">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+    <!-- trips Recommendtion will ends here-->
+
+
+
+
+     <!-- footer will import to here -->
+
+     <div class="footer"> </div>
+
+    <!-- footer ends here -->
+    
+    
+
+<script>
+
+//import components
+ $(".nav").load("navbar.html");
+ $(".footer").load("footer.html");
+
+
+// navigation starts her
+$("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+new WOW().init();
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+ </script>
+ 
+
+
+
+</body>
+</html>

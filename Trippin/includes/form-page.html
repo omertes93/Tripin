@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Trippin</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="../css/style.css">
+
+  
+
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+      <!-- js-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+   
+    
+</head>
+<body>
+
+     <div class="wrapper">
+
+    <!-- navbar will import to  here -->
+
+    <nav class="nav col-md-12 bg-dark"></nav> 
+
+    <!-- navbar ends here -->
+
+
+
+
+    <!-- form start here-->
+   
+
+  <main class=" col-md-12 bg-secondary text-light formbg font-weight-bold">
+    <div class="py-5 text-center">
+      <h2 >Let us paln your trip!</h2>
+      <p class="lead">you need to fiil below the key metric to let us know all the importants thing about your dream trip!</p>
+    </div>
+
+    <div class="row g-6">
+     <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-8 col-lg-8 myform">
+        <h4 class="mb-3">Private Details</h4>
+        
+        <form action="../php/insertToDatabase.php" method="POST" name="myForm" target="_self" >
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="passport" class="form-label">Passport Number</label>
+              <div class="input-group">
+                <span class="input-group-text">Passport</span>
+                <input type="text" class="form-control" name="passport" id="passport" placeholder="Passport Number" required>
+              <div class="invalid-feedback">
+                  Your Passport Number is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email </label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <hr class="my-12">
+
+            <div class="col-12">
+              <label for="goal" class="form-label">Vaccation Goal</label>
+              <input type="text" class="form-control" name="goal" id="goal" placeholder="colinary trip" required>
+              <div class="invalid-feedback">
+                Please enter your Trip Goals.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="SD" class="form-label"> Start Date</label>
+              <input type="date" class="form-control" name="SD" id="SD" >
+            </div>
+
+            <div class="col-md-4">
+              <label for="ED" class="form-label"> End Date</label>
+              <input type="date" class="form-control" name="ED" id="ED" >
+            </div>
+
+             <div class="col-md-4">
+              <label for="NumOfPepole" class="form-label"> Number Of Pepole</label>
+              <input type="number" class="form-control" name="NumOfPepole" id="NumOfPepole" >
+            </div>
+
+            <div class="col-md-12">
+            <br>
+              <label for="flexible" class="form-label">flexibility</label>
+              <select class="form-select" name="flexible" id="flexible" required>
+                <option value="">Choose your flexibility level</option>
+                <option value="Not At All">Not At All</option>
+                <option value="A Bit">A Bit</option>
+                <option value="Flexible">Flexible</option>
+                <option value="Fully Flexible">Fully Flexible</option> 
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <label for="Min Price" class="form-label"> Min Price ($)</label>
+             
+              <input type="number" class="form-control" name="Min_Price" id="Min rice" >
+            </div>
+
+
+            <div class="col-md-4">
+              <label for="Max Price" class="form-label"> Max Price ($)</label>
+              <input type="number" class="form-control" name="Max_Price" id="Max Price" >
+            </div>
+
+          <hr class="col-12 light">
+
+            <div class="row col-12">
+                  <div class="col-3"></div>
+                  <input class="col-6 w-100 btn btn-primary btn-lg" type="submit" value="Make my dream trip!">
+                  <div class="col-3"></div>
+            </div>
+            
+          <hr class="col-12 light">
+        </form>
+      </div>
+    </div>
+    
+    
+  </main>
+  
+  
+ 
+
+
+
+    
+
+
+
+    <!-- form ends here-->
+
+    
+    <!-- footer will import to here-->
+    <div class="footer  col-md-12"> </div>
+
+     
+
+    <!-- footer ends here -->
+    </div>
+
+
+
+<script>
+
+//import components
+ $(".nav").load("navbar.html");
+ $(".footer").load("footer.html");
+ 
+ 
+
+ // navigation starts here
+$("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+ </script>
+</body>
+</html>

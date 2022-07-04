@@ -1,0 +1,6 @@
+[26-Jun-2021 19:50:02 UTC] PHP Parse error:  syntax error, unexpected ''.$passport."'' (T_CONSTANT_ENCAPSED_STRING) in /home/itayva/public_html/php/insertToDatabase.php on line 37
+[26-Jun-2021 19:53:27 UTC] PHP Parse error:  syntax error, unexpected ''.$passport."'' (T_CONSTANT_ENCAPSED_STRING) in /home/itayva/public_html/php/insertToDatabase.php on line 37
+[26-Jun-2021 19:55:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/itayva/public_html/php/insertToDatabase.php on line 51
+[26-Jun-2021 20:00:41 UTC] PHP Warning:  require_once(database_connection.php): failed to open stream: No such file or directory in /home/itayva/public_html/php/getFromDatabase.php on line 10
+[26-Jun-2021 20:00:41 UTC] PHP Fatal error:  require_once(): Failed opening required 'database_connection.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/itayva/public_html/php/getFromDatabase.php on line 10
+[27-Jun-2021 11:44:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/itayva/public_html/php/mytrips-page.php on line 65
